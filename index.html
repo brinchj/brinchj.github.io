@@ -1264,6 +1264,198 @@ window.addEventListener("load", function () {
 };
   var ctx = document.getElementById("oil_cars").getContext("2d");
   window.myGraphoil_cars = new Chart(ctx, config);
+});</script></div></div><hr></hr><div class="row"><div class="col col-lg-12"><blockquote class="blockquote lead"><p class="mb-0">Det indgår i aftalen om Grøn Trepart, at der på landsplan skal rejses 250.000 ha skov frem mod 2045.</p><footer class="blockquote-footer text-right"><a href="https://sgav.dk/groen-trepart/lokale-treparter/vandomraadeplaner-kvaelstofindsats-og-lavbundsjorder/skov" target="_blank">Styrelsen for Grøn Arealomlægning og Vandmiljø</a></footer></blockquote></div></div><div class="row"><div class="col col-lg-12"><canvas id="skovareal"></canvas><script>
+window.addEventListener("load", function () {
+  var config = {
+  "type": "line",
+  "data": {
+    "labels": [
+      "1990-01",
+      "2000-01",
+      "2006-01",
+      "2007-01",
+      "2008-01",
+      "2009-01",
+      "2010-01",
+      "2011-01",
+      "2013-01",
+      "2015-01",
+      "2016-01",
+      "2017-01",
+      "2018-01",
+      "2019-01",
+      "2020-01",
+      "2021-01",
+      "2022-01",
+      "2023-01",
+      "2024-01",
+      "2025-01",
+      "2026-01",
+      "2027-01",
+      "2028-01",
+      "2029-01",
+      "2030-01",
+      "2031-01",
+      "2032-01",
+      "2033-01",
+      "2034-01",
+      "2035-01",
+      "2036-01",
+      "2037-01",
+      "2038-01",
+      "2039-01",
+      "2040-01",
+      "2041-01",
+      "2042-01",
+      "2043-01",
+      "2044-01",
+      "2045-01"
+    ],
+    "datasets": [
+      {
+        "label": "Skovareal i alt",
+        "backgroundColor": "#84c318",
+        "borderColor": "#84c318",
+        "data": [
+          445391,
+          486235,
+          553621,
+          566334,
+          580390,
+          582633,
+          587077,
+          600427,
+          615254,
+          624782,
+          624676,
+          625603,
+          627338,
+          633353,
+          632711,
+          640835,
+          642979,
+          651757,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "fill": "start",
+        "borderWidth": 1,
+        "pointRadius": 0,
+        "pointHoverRadius": 1
+      },
+      {
+        "label": "Vej til 2045 mål",
+        "backgroundColor": "#92ad94",
+        "borderColor": "#92ad94",
+        "data": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          663032,
+          674338,
+          685613,
+          696889,
+          708164,
+          719470,
+          730746,
+          742021,
+          753296,
+          764603,
+          775878,
+          787153,
+          798429,
+          809735,
+          821010,
+          832286,
+          843561,
+          854867,
+          866143,
+          877418,
+          888693,
+          900000
+        ],
+        "fill": "start",
+        "borderWidth": 1,
+        "pointRadius": 0,
+        "pointHoverRadius": 1
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "title": {
+      "display": false,
+      "text": "Skovareal i alt"
+    },
+    "tooltips": {
+      "mode": "index",
+      "intersect": false
+    },
+    "hover": {
+      "mode": "nearest",
+      "intersect": true
+    },
+    "scales": {
+      "xAxes": [
+        {
+          "stacked": true,
+          "display": true,
+          "scaleLabel": {
+            "display": false,
+            "labelString": "år"
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "stacked": true,
+          "display": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "hektar — 2024-12-13 08:00:00"
+          }
+        }
+      ]
+    }
+  }
+};
+  var ctx = document.getElementById("skovareal").getContext("2d");
+  window.myGraphskovareal = new Chart(ctx, config);
 });</script></div></div><hr></hr><div class="row"><div class="col col-lg-12"><blockquote class="blockquote lead"><p class="mb-0">70-procentsmålet skal sikre, at Danmark bliver et foregangsland på klimaområdet. Men selvom målet er krævende, peger tidligere beregninger fra Klimarådet på, at 70 pct. i 2030 og klimaneutralitet senest i 2050 ikke er mere ambitiøst end nødvendigt. Målet svarer nemlig nogenlunde til, hvad der skal til, hvis Danmark skal kunne siges at levere sit bidrag til at begrænse den globale temperaturstigning til 1,5 grader.</p><footer class="blockquote-footer text-right"><a href="https://klimaraadet.dk/da/rapporter/kendte-veje-og-nye-spor-til-70-procents-reduktion" target="_blank">Klimarådet, marts 2020</a></footer></blockquote></div></div><div class="row"><div class="col col-lg-12"><canvas id="emissions"></canvas><script>
 window.addEventListener("load", function () {
   var config = {
